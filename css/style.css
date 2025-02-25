@@ -11,6 +11,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  color: inherit; /* 부모 요소의 색상을 따르게 설정 */
 }
 
 button {
@@ -297,12 +302,21 @@ header .nav-content svg {
 
 .button {
   border-radius: 100px;
-  transition: all 0.3s ease;
+  background-color: var(--color-sys-shape-white);
+  transition: all 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
   display: flex;
   padding: 14px 32px;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.button:hover {
+  background-color: var(--color-core-green-100); /* 더 어두운 블루 */
+}
+
+.button:active {
+  background-color: var(--color-core-green-200); /* 더 어두운 블루 */
 }
 
 .button-text {
@@ -323,6 +337,16 @@ header .button {
 
 .header-scrolled .button {
   background-color: var(--color-sys-shape-brand);
+  color: var(--color-sys-shape-white);
+}
+
+.header-scrolled .button:hover {
+  background-color: var(--color-core-green-600);
+  color: var(--color-sys-shape-white);
+}
+
+.header-scrolled .button:active {
+  background-color: var(--color-core-green-700);
   color: var(--color-sys-shape-white);
 }
 
@@ -814,15 +838,23 @@ p {
   opacity: 0;
   height: max-content;
   background-color: var(--color-sys-shape-white);
-  transform: translateY(50px);
+  transform: translateY(50px), background-color 0.3s ease, transform 0.2s ease;
   animation: fadeInUp 1s ease forwards;
   animation-delay: 0.7s;
   padding: 16px 32px;
 }
 
+.content-7-layout-1 button:hover {
+  background-color: var(--color-core-blue-100); /* 더 어두운 블루 */
+}
+
+.content-7-layout-1 button:active {
+  background-color: var(--color-core-blue-200); /* 더 어두운 블루 */
+}
+
 .content-7-layout-1 button p {
   width: max-content;
-  color: var(--color-sys-txt-b-primary);
+  color: var(--color-core-blue-400);
 }
 
 #content-8 {
