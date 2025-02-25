@@ -1,0 +1,253 @@
+/* 기본(데스크톱) 스타일 적용 */
+
+/* 719px 이하일 때 모바일 스타일 적용 */
+@media screen and (max-width: 719px) {
+  html,
+  body {
+    overflow-x: hidden; /* 가로 스크롤 제거 */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 40px; /* 112.5% */
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 32px; /* 116.667% */
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .nav-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #content-1 {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .content-1-layout {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .content-1-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .content-1-left h1 {
+    text-align: center;
+  }
+
+  .content-1-left p {
+    text-align: center;
+  }
+
+  .content-1-right img {
+    width: 282px;
+    height: 388px;
+  }
+
+  #content-2 {
+    width: 100%;
+    margin: 64px 0;
+    padding: 0 20px;
+    gap: 16px;
+  }
+
+  .reading-data-layout {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 8px;
+  }
+
+  .reading-data {
+    width: 100%;
+    padding: 32px 48px;
+  }
+
+  .counter {
+    font-size: 32px;
+    line-height: 40px; /* 112.5% */
+  }
+
+  .mr-info {
+    width: 100%;
+    max-width: none;
+    padding: 32px 32px;
+  }
+
+  .mr-info h3 {
+    text-align: left;
+    width: 100%;
+  }
+
+  .mr-info p {
+    text-align: left;
+  }
+
+  #content-3 {
+    gap: 16px;
+    margin: 64px 0;
+    padding: 0 20px;
+  }
+
+  .content-3-layout-2 {
+    max-width: none;
+    gap: 8px;
+  }
+
+  .series-offer {
+    width: 100%;
+    padding: 32px 32px 24px 32px;
+  }
+
+  .series-offer img {
+    width: 180.78px;
+    height: 200px;
+  }
+
+  #content-4 {
+    gap: 16px;
+    margin: 64px 0;
+    padding: 0 20px;
+  }
+
+  .content-4-layout-2 {
+    max-width: none;
+    gap: 8px;
+  }
+
+  .service-offer-1 {
+    padding: 32px 32px 0 32px;
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .service-offer-1-text {
+    gap: 8px;
+  }
+
+  .service-offer-1 img {
+    width: 207px;
+    height: auto;
+  }
+
+  .service-offer-2 {
+    width: 100%;
+    gap: 8px;
+    padding: 32px 32px 0 32px;
+    flex-direction: column;
+  }
+
+  .service-offer-2 img {
+    width: 207px;
+    height: auto;
+  }
+
+  #content-5 {
+    gap: 16px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .carousel-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    border-radius: 24px;
+  }
+
+  .carousel-container h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .carousel-track {
+    margin-left: 300px;
+  }
+
+  .carousel-slide {
+    width: 300px;
+    height: 266px;
+  }
+
+  #content-6 {
+    gap: 8px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .content-6-layout-1 {
+    gap: 8px;
+  }
+
+  .content-6-layout-1 button {
+    margin-top: 16px;
+  }
+
+  #content-7 {
+    gap: 8px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .content-7-layout-1 {
+    max-width: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .content-7-layout-2 {
+    gap: 8px;
+  }
+
+  .content-7-layout-2 h3 {
+    text-align: center;
+  }
+
+  .content-7-layout-2 p {
+    text-align: center;
+  }
+
+  #content-8 {
+    gap: 32px;
+    padding: 64px 20px;
+  }
+
+  .content-8-layout-1 {
+    max-width: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .content-8-layout-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .content-8-layout-3 {
+    max-width: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+  }
+}
